@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Mi aplicación{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'persona_list' %}">Personas</a></li>
+            <!-- Agregar otros enlaces de navegación aquí -->
+        </ul>
+    </nav>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <footer>
+        <!-- Agregar el pie de página aquí -->
+    </footer>
+</body>
+</html>
